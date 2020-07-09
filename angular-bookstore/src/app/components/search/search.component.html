@@ -1,0 +1,17 @@
+<div class="col-md-12">
+    <div class="row">
+      <div class="col-md-10">
+        <input type="text" 
+        #searchInput
+        (keyup.enter) ="searchBooks(searchInput.value)"
+        class="form-control" 
+        placeholder="Search Books">
+      </div>
+      <div class="col-md-2">
+        <button 
+        class="btn btn-primary" 
+        type="submit"
+        (click)="searchBooks(searchInput.value)">Search</button>
+      </div>
+    </div>
+  </div>
